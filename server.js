@@ -39,9 +39,9 @@ app.post('/', (req, res) => {
         url: 'https://api.jdoodle.com/v1/execute/',
         data: obj
     }).then(resp => {
-        hola = resp.data;
-        console.log(hola)
-        res.json(hola)
+        let d = resp.data;
+        console.log(d)
+        res.json(d)
     })
 });
 
