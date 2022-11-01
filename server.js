@@ -10,8 +10,8 @@ app.use(cors());
 app.use(express.json());
 
 app.get('/', (req, res) => {
-    { message: "Hola! Welcome to the Executor-Backend" };
-    res.send(hola);
+    let message = { message: "Hola! Welcome to the Executor-Backend" };
+    res.send(message);
 });
 
 app.post('/', (req, res) => {
